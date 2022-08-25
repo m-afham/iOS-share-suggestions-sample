@@ -6,7 +6,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/m-afham/iOS-share-suggestions-sample?color=red)
 ![Platform](https://img.shields.io/cocoapods/p/ios?color=red)
 
-A screen that unlocks itself when you smile.
+A sample project to demonstrate the working of iOS share suggestions
+
 </div>
 
 ## Requirements
