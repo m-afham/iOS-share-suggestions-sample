@@ -20,7 +20,7 @@ class ViewController: UIViewController {
   
   @IBAction func btnGenerateReceivedIntent(_ sender: UIButton) {
     
-    let groupName = INSpeakableString(spokenPhrase: "Awais Z")
+    let groupName = INSpeakableString(spokenPhrase: "M Afham")
     
     
     let sendMessageIntent = INSendMessageIntent.init(recipients: nil,
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
                                                      conversationIdentifier: "com.fhetch.message",
                                                      serviceName: nil, sender: nil, attachments: nil)
 
-    let image = INImage(named: "Awais Z")
+    let image = INImage(named: "Image1") // Important To work
     sendMessageIntent.setImage(image, forParameterNamed: \.speakableGroupName)
 
     IntentHandler.donateInteractionUsing(intent: sendMessageIntent, isOutgoing: false)
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
   
   @IBAction func generateSendMessageIntent(_ sender: UIButton) {
     // Create an INSendMessageIntent to donate an intent for a conversation with Juan Chavez.
-    let groupName = INSpeakableString(spokenPhrase: "Awais Z")
+    let groupName = INSpeakableString(spokenPhrase: "M Afham")
     
     
     let sendMessageIntent = INSendMessageIntent.init(recipients: nil,
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
                                                      conversationIdentifier: "com.fhetch.message",
                                                      serviceName: nil, sender: nil, attachments: nil)
     
-    let image = INImage(named: "Awais Z")
+    let image = INImage(named: "Image1")
     sendMessageIntent.setImage(image, forParameterNamed: \.speakableGroupName)
 
     IntentHandler.donateInteractionUsing(intent: sendMessageIntent, isOutgoing: true)
